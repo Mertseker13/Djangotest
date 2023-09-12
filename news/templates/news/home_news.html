@@ -1,0 +1,20 @@
+{%extends 'main/layout.html'%}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1><marquee>Горячие Новости  </marquee></h1>
+        {% for new in news %}
+        <div class="alert-alert warning">
+            <h3>{{ new.title }}</h3>
+            <p>{{ new.anons }}</p>
+            <a href="{% url 'news-detail' new.id %}">
+                <button class="btn btn-primary" type="submit" > Перейти к новостям </button>
+            </a>
+        </div>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

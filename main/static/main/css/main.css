@@ -1,0 +1,79 @@
+body{
+    background:beige;
+
+}
+
+/*aside  {
+    float:left;
+    background:white;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: white;
+    border-right: 1px solid grey;
+}*/
+main .container{
+    color:black;
+    margin-top:100px;
+    text-align:center;
+    width:75%;
+}
+/*aside ul{
+    list-style:none;
+}
+aside a{
+    text-decoration:none;
+}
+aside ul li{
+    margin-top:15px;
+}*/
+h3{
+    color:black;
+}
+form{
+    margin-left : 30%;
+    width : 300px;
+    margin-top : 50px;
+}
+#mySidenav a {
+  position: absolute;
+  left: -130px;
+  transition: 0.3s;
+  padding: 25px;
+  width: 200px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#home {
+  top: 20px;
+  background-color: grey;
+}
+
+#about {
+  top: 80px;
+  background-color: red;
+}
+
+#news{
+  top: 140px;
+  background-color: blue;
+}
+
+#contact {
+  top: 200px;
+  background-color: black;
+}
+#addnews {
+  top: 200px;
+  background-color: green;
+}
+#mySidenav li{
+    list-style:none;
+}

@@ -1,0 +1,17 @@
+{%extends 'main/layout.html'%}
+
+{% block title %}LIST VIEW{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% for article in news_list %}
+            <h2>{{ article.title }}</h2>
+            <p>{{ article.anons }}</p>
+            <a href="{% url 'news-update' article.id %}"><button class="btn btn-warning">Изменить</button></a>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}
+
+

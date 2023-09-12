@@ -1,0 +1,38 @@
+{%extends 'main/layout.html'%}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1><marquee>Главная Страница</marquee></h1>
+        <p><marquee direction="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta distinctio itaque repellendus! Earum, nam, nulla! Aspernatur aut deleniti ducimus exercitationem praesentium, quos voluptatibus. Earum id, illum inventore quasi similique temporibus.</marquee></p>
+        <button class="btn btn-warning">Нажать</button>
+
+        {% for val in test_list %}
+            {% if val == True %}
+                {% filter upper %}
+                    {{person_object}}
+                {%endfilter%}
+            {%endif%}
+        {%endfor%}
+
+
+    </div>
+    {%include "main/test.html"%}
+{% endblock %}
+
+
+<!--<!doctype html>-->
+<!--<html lang="ru">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <title>Главная Страница</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Главная Страница</h1>-->
+<!--<p>Главная Страница</p>-->
+<!--</body>-->
+<!--</html>-->

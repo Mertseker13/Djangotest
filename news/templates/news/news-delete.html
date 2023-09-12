@@ -1,0 +1,16 @@
+{%extends 'main/layout.html'%}
+
+{% block title %}Удаление Статьи{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Удаление Статьи</h1>
+        <form method="post">
+          {% csrf_token %}
+            <button class="btn btn-danger" type="submit">Удалить Статью</button>
+        </form>
+    </div>
+    <div class="container">
+        <a href="{% url 'news-detail' article.id %}"><button class="btn btn-warning" type="submit">Вернуться Назад</button></a>
+    </div>
+{% endblock %}
