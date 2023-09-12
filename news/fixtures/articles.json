@@ -1,0 +1,1 @@
+[{"model": "news.articles", "pk": 3, "fields": {"title": "News1", "anons": "DFGDFGSD", "news_text": "DFGDFGDFgd", "date": "2023-09-07T21:04:00Z"}}, {"model": "news.articles", "pk": 4, "fields": {"title": "News12", "anons": "sadasdasd", "news_text": "sdfgsdgxc", "date": "2023-09-07T19:20:00Z"}}]
